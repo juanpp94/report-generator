@@ -1,0 +1,28 @@
+<div class="form-container">
+
+    <h4>El siguiente formulario es para agregar a los restaurantes que adquieran el servicio</h4>
+    <form [formGroup]="addRestaurantForm" (ngSubmit)="validateRestaurantInformation()" >
+        <div class="input-container">
+            <label  for="name">Nombre:</label>
+            <input formControlName="name" type="text" id="name" placeholder="Mi restaurante"/>
+        </div>
+        <div class="input-container">
+            <label for="country">País:</label>
+            <select formControlName="country" id="country" >
+                <option *ngFor="let country of countries">{{country['name']}}</option>
+            </select>
+        </div>
+        <div class="input-container">
+            <label for="state">Estado:</label>
+            <select formControlName="city" id="state" >
+                <option *ngFor="let city of cities">{{city['name']}}</option>
+            </select>
+        </div>
+        <div class="input-container">
+            <label for="address">Dirección:</label>
+            <textarea formControlName="address" id="address" placeholder="Ingrese la dirección" cols="30" rows="5"></textarea>
+        </div>
+
+        <button type="submit">Agregar</button>
+    </form>
+</div>
