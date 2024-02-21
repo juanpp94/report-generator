@@ -19,10 +19,10 @@ export class ReportService {
     for (const [index, page] of Array.from(pages).entries()) {
       const canvas = await html2canvas(page as HTMLElement, { scale: 3 });
 
-      const paddingTop = 250;
-      const paddingRight = 250;
-      const paddingBottom = 250;
-      const paddingLeft = 250;
+      const paddingTop = 800;
+      const paddingRight = 200;
+      const paddingBottom = 1000;
+      const paddingLeft = 200;
 
       const canvasWidth = canvas.width + paddingLeft + paddingRight;
       const canvasHeight = canvas.height + paddingTop + paddingBottom;

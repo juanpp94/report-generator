@@ -6,8 +6,14 @@
     border: 4px solid #000;
     margin: 10px;
     height: 100vh;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
 
     header {
+
+       
         .report-shift {
             display: flex;
             justify-content: space-between;
@@ -31,8 +37,20 @@
 
         .restaurant-data {
             text-align: center;
+            h1 {
+                font-size: 100px;
+                margin-bottom: 30px;
+            }
+        }
+
+        picture {
+            //border: 1px solid red;
+            display: flex;
+            justify-content: end;
         }
     }
 
    
   }
+
+  
