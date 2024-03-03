@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {jsPDF} from 'jspdf';
 import html2canvas from 'html2canvas';
+import { env } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +9,8 @@ import html2canvas from 'html2canvas';
 export class ReportService {
 
   showLoader: boolean = false;
+  readonly url: string = env.api;
+
 
   constructor() { }
 

@@ -1,6 +1,7 @@
 <button (click)="downloadPdf()">Download as PDF</button>
 <div *ngIf="!_reportService.showLoader" class="pages">
     <app-front-page></app-front-page>
+    <app-report-summary></app-report-summary>
   <!-- <div id="page-1" class="page">
     <h1>1: Page 1 Heading- FreakyJolly.com</h1>
     <p>Page 1 sample paragraph.</p>
